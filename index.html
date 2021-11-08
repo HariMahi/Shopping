@@ -46,20 +46,8 @@
  <b><p id="product_rating" style="color:orange;"></p></b>
   <p><button>Add to Cart</button></p>
  <p><button style="background-color:green;">Buy Now</button></p>
-  <button type="button" onclick="loadVeg()">Vegetables</button>
+
 </div>
-<script>
-function loadVeg() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("shop").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "https://github.com/HariMahi/Shopping/blob/main/data.json", true);
-  xhttp.send();
-}
-  </script>
+
 </body>
 </html>
