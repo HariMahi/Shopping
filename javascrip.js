@@ -1,10 +1,5 @@
-var mydata = JSON.parse(data);
-document.getElementById("product_name").innerHTML=mydata.name + "<br>";
-document.getElementById("product_price").innerHTML=mydata.price + "<br>";
-document.getElementById("product_description").innerHTML=mydata.desc + "<br>";
-document.getElementById("product_rating").innerHTML=mydata.rating + "<br>";
-document.getElementById("product_image").innerHTML=mydata.image + "<br>";
-
-
-
+const url = 'https://github.com/HariMahi/Shopping/blob/main/data.json' // or whatever your url is 
+fetch(url) 
+ .then(response => response.json()) 
+ .then(data => console.log(data)); //or whatever you want to do with the resulting object 
 
