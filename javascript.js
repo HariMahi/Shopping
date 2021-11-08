@@ -1,8 +1,10 @@
-const obj = JSON.parse(txt);
-document.getElementById("product_name").innerHTML=obj.name + "<br>";
-document.getElementById("product_price").innerHTML=obj.price + "<br>";
-document.getElementById("product_description").innerHTML=obj.desc + "<br>";
-document.getElementById("product_rating").innerHTML=obj.rating + "<br>";
-document.getElementById("product_image").innerHTML=obj.image + "<br>";
+var mydata = JSON.parse(data);
+document.getElementById("product_name").innerHTML=mydata.name + "<br>";
+document.getElementById("product_price").innerHTML=mydata.price + "<br>";
+document.getElementById("product_description").innerHTML=mydata.desc + "<br>";
+document.getElementById("product_rating").innerHTML=mydata.rating + "<br>";
+document.getElementById("product_image").innerHTML=mydata.image + "<br>";
+
+
 
 
