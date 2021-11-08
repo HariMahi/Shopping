@@ -48,28 +48,7 @@
   <p><button>Add to Cart</button></p>
  <p><button style="background-color:green;">Buy Now</button></p>
 </div>
-<script>
-var xmlhttp = new XMLHttpRequest();
-var url = https://github.com/HariMahi/Shopping/edit/main/data.json;
-
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var myArr = JSON.parse(this.responseText);
-        myFunction(myArr);
-    }
-};
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
-
-function myFunction(arr) {
-    var out = "";
-    var i;
-    for(i = 0; i < arr.length; i++) {
-        out += '<a href="' + arr[i].name + '">' +
-        arr[i].desc + '</a><br>';
-    }
-    document.getElementById("product_name").innerHTML = out;
-}
-</script>
+<script type="text/javascript" src="data.json"></script>
+<script type="text/javascript" src="javascrip.js"></script>
 </body>
 </html>
